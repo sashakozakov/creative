@@ -26,12 +26,7 @@ h4 {
 	font-size: $h4-font-size;
 	line-height: 2;
 }
-ul {
-	padding: 0 0 0 20px;
-	li {
-		list-style-image: url('../img/list-style.svg');
-	}
-}
+
 
 .ba-header {
 	height: 91px;
@@ -253,7 +248,7 @@ ul {
 aside {
 	.ba-post-delta {
 		.ba-post__description {
-		    padding: 33px 15px 40px 33px;
+			padding: 33px 15px 40px 33px;
 			&:before {
 				display: none;
 			}
@@ -262,7 +257,7 @@ aside {
 			}
 			span {
 				margin-top: -5px;
-			    display: block;
+				display: block;
 			}
 			form {
 				margin: 0;
@@ -289,7 +284,7 @@ aside {
 				margin-bottom: 10px;
 				color: $oil;
 				padding: 2px 15px;
-			    transition: background .3s ease-out;
+				transition: background .3s ease-out;
 				&:hover {
 					background: darken($white-smoke, 15%);
 				}
@@ -297,26 +292,32 @@ aside {
 					background: darken($white-smoke, 40%);
 				}
 			}
+			ul {
+				padding: 0 0 0 20px;
+				li {
+					list-style-image: url('../img/list-style.svg');
+				}
+			}
 		}
 	}
 }
 form .row .row.collapse input{
-		border: 1px solid rgba(0, 0, 0, 0.12);
-		border-radius: 3px;
-		font-size: 12px;
-		height: 53px;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	border-radius: 3px;
+	font-size: 12px;
+	height: 53px;
 
-		&:before {
-			position: absolute;
-			content: "2";
-			top: 0;
-			left: 0;
-			color: red;
-			width: 15px;
-			height: 15px;
-			background: blue;
-			z-index: 999;
-		}
+	&:before {
+		position: absolute;
+		content: "2";
+		top: 0;
+		left: 0;
+		color: red;
+		width: 15px;
+		height: 15px;
+		background: blue;
+		z-index: 999;
+	}
 }
 .postfix.button {
 	position: absolute;
