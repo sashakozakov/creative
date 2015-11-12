@@ -41,6 +41,28 @@ h6 {
 input[type=email] {
 	padding-left: 40px;
 }
+input[type="submit"],
+button {
+	background: $primary-color;
+	color: $secondary-color;
+    padding-left: 15px;
+    padding-right: 15px;
+	height: 40px;
+	border: none;
+	border-radius: 3px;
+    box-shadow: 0 2px 1px #999,inset 0 1px 0 rgba(251,251,252,0.86);
+	font-weight: bold;
+	line-height: normal;
+	transition: background .3s ease-in, color .3s ease-in;
+	&:hover{
+		background: darken($primary-color, 15%);
+		color: lighten($secondary-color, 40%);
+	}
+	&:active{
+		background: darken($primary-color, 30%);
+		color: lighten($secondary-color, 40%);
+	}
+}
 .icon-mail {
 	position: absolute;
 	content: "";
@@ -356,16 +378,16 @@ form .row .row.collapse input{
 		z-index: 999;
 	}
 }
-.postfix.button {
+.button {
+	background: $white-smoke;
 	position: absolute;
 	top: 7px;
 	right: 13px;
-	width: 23%;
+    padding-left: 15px;
+    padding-right: 15px;
 	height: 40px;
-	line-height: 40px;
 	border-radius: 3px;
 	box-shadow: 0 2px 1px #999, inset 0 1px 0 rgba(251, 251, 252, 0.86);
-	background-color: $white-smoke;
 
 	&:hover {
 		background: $primary-color;
@@ -417,11 +439,11 @@ form .row .row.collapse input{
 	}
 	form {
 		padding-top: 20px;
-		.postfix.button {
-			width: 58px;
+		.button {
 			background: $primary-color;
 			color: $secondary-color;
 			font-weight: bold;
+			line-height: normal;
 			transition: background .3s ease-in, color .3s ease-in;
 			&:hover{
 				background: darken($primary-color, 15%);
