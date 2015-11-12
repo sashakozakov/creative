@@ -386,11 +386,16 @@ form .row .row.collapse input{
 		.postfix.button {
 			width: 58px;
 			background: $primary-color;
+			color: $secondary-color;
+			font-weight: bold;
+			transition: background .3s ease-in, color .3s ease-in;
 			&:hover{
 				background: darken($primary-color, 15%);
+				color: lighten($secondary-color, 20%);
 			}
 			&:active{
 				background: darken($primary-color, 30%);
+				color: lighten($secondary-color, 40%);
 			}
 		}
 	}
