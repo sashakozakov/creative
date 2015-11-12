@@ -16,18 +16,39 @@ h1 {
 	line-height: 1.13;
 }
 h2 {
-
+	font-size: $h2-font-size;
+	line-height: 1.13;
 }
 h3 {
-	margin: 0;
 	font-size: $h3-font-size;
 }
 h4 {
 	font-size: $h4-font-size;
 	line-height: 2;
 }
+h5 {
+	font-size: $h5-font-size;
+	line-height: 2;
+}
+h6 {
+	font-size: $h6-font-size;
+	line-height: 2;
+}
 
-
+.medium-4 {
+	padding-right: 0;
+}
+input[type=email] {
+	padding-left: 40px;
+}
+.icon-mail {
+	position: absolute;
+	content: "";
+	background:url('../img/mail-icon.svg') no-repeat;
+	width: 15px;height: 12px;
+	top: 21px;left: 14px;
+	z-index: 999;
+}
 .ba-header {
 	height: 91px;
 	width: 100%;
@@ -54,6 +75,8 @@ h4 {
 			.title-area {
 				margin-right: 10px;
 				background: $primary-color;
+				padding-left: 0;
+				padding-right: 40px;
 				.name {
 					position: relative;
 					.ba-logo {
@@ -227,25 +250,27 @@ h4 {
 		}
 		&__time {
 			font-size: 11px;
-			line-height: 3;
 			color: $smoke;
+			margin: 8px 0 0;
 		}
 		&__sub-title {
-			margin: 5px 0 0 0;
+			margin: 7px 0 0 0;
 			color: $primary-color;
 		}
 		&__text {
 			color: $text-color;
 			margin: 5px 0 0 2px;
 		}
+		h3 {
+			margin: 0;
+		}
 	}
 
 }
 
-.medium-4 {
-	padding-right: 0;
-}
+
 aside {
+	.ba-post{}
 	.ba-post-delta {
 		.ba-post__description {
 			padding: 33px 15px 40px 33px;
@@ -256,24 +281,26 @@ aside {
 				margin-top: 23px;
 			}
 			span {
-				margin-top: -5px;
+				margin-top: -1px;
+				padding-bottom: 3px;
 				display: block;
 			}
 			form {
 				margin: 0;
 				input {
 					position: relative;
-					padding-left: 40px;
 					@media #{$medium-only} {
 						padding-left: 25px;
 					}
 				}
+
 			}
 			i {
 				font-size: 11px;
 				color: $info-color;
 			}
-
+		.ba-tags{
+			margin-top: 8px;
 			.ba-tag {
 				background-color: $white-smoke;
 				background-image: linear-gradient(to top, #ddd 0%, #eee 100%);
@@ -292,12 +319,22 @@ aside {
 					background: darken($white-smoke, 40%);
 				}
 			}
+		}
 			ul {
-				padding: 0 0 0 20px;
+				padding: 0 0 0 15px;
 				li {
 					list-style-image: url('../img/list-style.svg');
+					a {
+						color: $info-color;
+					}
+					span {
+						font-size: 10px;
+					}
 				}
 			}
+		}
+		.ba-post__block {
+			padding-bottom: 27px;
 		}
 	}
 }
@@ -339,7 +376,7 @@ form .row .row.collapse input{
 }
 
 .ba-footer {
-	padding: 38px 0 130px 0;
+	padding: 38px 0 100px 0;
 	background: $footer-color;
 	color: $white;
 	.medium-6 {
@@ -380,9 +417,6 @@ form .row .row.collapse input{
 	}
 	form {
 		padding-top: 20px;
-		input {
-			padding-left: 30px;
-		}
 		.postfix.button {
 			width: 58px;
 			background: $primary-color;

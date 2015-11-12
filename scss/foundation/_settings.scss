@@ -223,12 +223,12 @@ $medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-$h1-font-size: rem-calc(30);
+$h1-font-size: rem-calc(40);
 $h2-font-size: rem-calc(30);
 $h3-font-size: rem-calc(16);
 $h4-font-size: rem-calc(15);
 $h5-font-size: rem-calc(14);
-// $h6-font-size: 1rem;
+$h6-font-size: 1rem;
 
 // We use these to control header size reduction on small screens
 // $h1-font-reduction: rem-calc(10);
