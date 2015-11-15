@@ -34,7 +34,26 @@ h6 {
 	font-size: $h6-font-size;
 	line-height: 2;
 }
-
+input:not([type]),
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"] {
+	border: 1px solid rgba(0,0,0,0.12);
+	border-radius: 3px;
+	font-size: 12px;
+	height: 53px;
+}
 .medium-4 {
 	padding-right: 0;
 }
@@ -70,6 +89,9 @@ button {
 	width: 15px;height: 12px;
 	top: 21px;left: 14px;
 	z-index: 999;
+	.cls-2 {
+		fill: $white-smoke;
+	}
 }
 .ba-header {
 	height: 91px;
@@ -265,6 +287,12 @@ button {
 			@media #{$small-only} {font-size: 20px;width: 100%;}
 			a {
 				color: $title-color;
+						&:hover {
+						color: $primary-color;
+						}
+						&:active {
+						color: $secondary-color;
+						}
 			}
 			.two-columns-post {
 				font-size: 16px; width: 100%;
@@ -348,6 +376,12 @@ aside {
 					list-style-image: url('../img/list-style.svg');
 					a {
 						color: $info-color;
+						&:hover {
+						color: $primary-color;
+						}
+						&:active {
+						color: $secondary-color;
+						}
 					}
 					span {
 						font-size: 10px;
