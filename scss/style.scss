@@ -327,6 +327,9 @@ aside {
 			&:before {
 				display: none;
 			}
+			&__text {
+				font-style: italic;
+			}
 			p+h3 {
 				margin-top: 23px;
 			}
